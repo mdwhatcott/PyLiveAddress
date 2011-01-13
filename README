@@ -1,2 +1,6 @@
+Dependancies: suds - a Lightweight SOAP client
+
+http://pypi.python.org/pypi/suds
+
 In order to use this code you will need to create a file called key.txt that has your LiveAddress API key (XML version).
 This file is purposely logged in the .gitignore so that it will never be commited (thus exposing your API key).
