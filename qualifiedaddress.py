@@ -59,7 +59,8 @@ class LiveAddressResponse(object):
         formatted_addresses = ''.join([DOUBLE_TAB + repr(address) for address in self.addresses])
         rep = 'LiveAddressResponse('
         rep += TAB + 'verified={0},'.format(self.verified)
-        rep += TAB + 'qualified_addresses=[{0}],'.format(formatted_addresses)
+        rep += TAB + 'qualified_addresses=[{0}'.format(formatted_addresses)
+        rep += TAB + '],'
         rep += TAB + 'message="{0}"'.format(self.message)
         rep += '\n)'
         return rep
